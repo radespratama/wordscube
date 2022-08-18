@@ -30,8 +30,9 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
           />
+          <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
         </Head>
-        <body>
+        <body className="bg-gray-950 text-white">
           <Main />
           <NextScript />
         </body>

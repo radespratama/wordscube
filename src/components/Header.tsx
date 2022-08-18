@@ -1,5 +1,9 @@
 import React from "react";
 
-export default function Header() {
-  return <div>Header</div>;
+export default function Header({ isHeader }: { isHeader?: boolean }) {
+  if (isHeader) {
+    return <div>Header</div>;
+  }
+
+  return <></>;
 }
