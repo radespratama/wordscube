@@ -24,7 +24,8 @@
     src: url("/fonts/DankMono-Italic.woff2") format("woff2");
   }
   * {
-    @apply m-0 p-0 box-border scroll-smooth cursor-none;
+    @apply m-0 p-0 box-border scroll-smooth;
+    cursor: none !important;
   }
   html,
   body {
@@ -62,9 +63,6 @@
   .title-mark:hover::before {
     transform: scaleX(1);
     transform-origin: left;
-  }
-  .cursor-silence {
-    cursor: none !important;
   }
   .cd {
     @apply hidden lg:inline pointer-events-none absolute top-1/2 left-1/2 rounded-full opacity-0
