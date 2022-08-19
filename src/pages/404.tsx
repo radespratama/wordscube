@@ -17,7 +17,7 @@ export default function NotFoundPage() {
 
           <A
             href="/"
-            className="mt-6 text-base underline underline-offset-8 flex items-center text-gray-400"
+            className="mt-6 text-base underline underline-offset-8 flex items-center text-gray-700 dark:text-gray-400"
           >
             <Door size={20} className="mr-1" /> Back to home
           </A>
