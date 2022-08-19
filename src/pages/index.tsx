@@ -4,7 +4,7 @@ import Dynamic from "next/dynamic";
 import AppLayout from "@layout/AppLayout";
 
 import MetaTags from "@component/MetaTags";
-import Cursor from "@component/Cursor";
+const Switcher = Dynamic(() => import("@component/Switcher"));
 const Hero = Dynamic(() => import("@component/Hero"));
 
 const Home: NextPage = () => {
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <AppLayout>
         <Hero />
       </AppLayout>
-      <Cursor />
+      <Switcher />
     </>
   );
 };

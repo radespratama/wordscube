@@ -1,18 +1,21 @@
 import React, { ReactNode } from "react";
-import Header from "@component/Header";
 import Footer from "@component/Footer";
 
 interface AppLayoutProps {
   children: ReactNode;
-  isHeader?: boolean;
+  isFooter?: boolean;
 }
 
-export default function AppLayout({ children, isHeader }: AppLayoutProps) {
+export default function AppLayout({
+  children,
+  isFooter,
+}: AppLayoutProps) {
   return (
     <>
-      <Header isHeader={isHeader} />
-      <main className="flex-wrap flex-grow px-2">{children}</main>
-      <Footer />
+      <main className="flex-wrap flex-grow px-2 max-w-screen-lg mx-auto">
+        {children}
+      </main>
+      <Footer isFooter={isFooter} />
     </>
   );
 }

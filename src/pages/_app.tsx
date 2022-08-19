@@ -1,6 +1,10 @@
-import "@css/globals.css";
-import NextNProgress from "nextjs-progressbar";
 import type { AppProps } from "next/app";
+import Dynamic from "next/dynamic";
+import NextNProgress from "nextjs-progressbar";
+
+const Cursor = Dynamic(() => import("@component/Cursor"));
+
+import "@css/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -13,6 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         showOnShallow
       />
       <Component {...pageProps} />
+      <Cursor />
     </>
   );
 }

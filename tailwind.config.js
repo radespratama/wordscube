@@ -2,6 +2,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {},
     screens: {
@@ -23,6 +24,7 @@ module.exports = {
       mono:
         ['"Fira Code", "Dank Mono"', ...defaultTheme.fontFamily.mono] +
         "!important",
+      serif: ["Lora", ...defaultTheme.fontFamily.serif],
     },
   },
   plugins: [

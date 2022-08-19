@@ -27,12 +27,12 @@ class MyDocument extends Document {
             crossOrigin="true"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Lora&family=Outfit:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           />
           <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
         </Head>
-        <body className="bg-gray-950 text-white">
+        <body className="text-gray-950 bg-white dark:bg-gray-950 dark:text-white">
           <Main />
           <NextScript />
         </body>
