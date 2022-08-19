@@ -3,6 +3,7 @@ import Dynamic from "next/dynamic";
 import NextNProgress from "nextjs-progressbar";
 
 const Cursor = Dynamic(() => import("@component/Cursor"));
+const Switcher = Dynamic(() => import("@component/Switcher"));
 
 import "@css/globals.css";
 
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       />
       <Component {...pageProps} />
       <Cursor />
+      <Switcher />
     </>
   );
 }

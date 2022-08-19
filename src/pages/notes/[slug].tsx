@@ -9,7 +9,6 @@ import { Note } from "@lib/types/typing";
 
 import MetaTags from "@component/MetaTags";
 const NotesDetail = Dynamic(() => import("@component/Notespage/NotesDetail"));
-const Switcher = Dynamic(() => import("@component/Switcher"));
 
 interface Props {
   notes: Note;
@@ -26,7 +25,6 @@ const DetailNotes: NextPage<Props> = ({ notes }) => {
       <AppLayout isFooter>
         <NotesDetail notes={notes} />
       </AppLayout>
-      <Switcher />
     </>
   );
 };

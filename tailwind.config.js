@@ -24,7 +24,6 @@ module.exports = {
       mono:
         ['"Fira Code", "Dank Mono"', ...defaultTheme.fontFamily.mono] +
         "!important",
-      serif: ["Lora", ...defaultTheme.fontFamily.serif],
     },
   },
   plugins: [

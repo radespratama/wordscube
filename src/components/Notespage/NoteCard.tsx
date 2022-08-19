@@ -22,6 +22,7 @@ export default function NoteCard({
       <div className="hidden md:flex flex-col items-center">
         <CircleIcon stroke="stroke-white" />
         <span className="bg-gray-400 dark:bg-gray-800 h-full w-px" />
+        <CircleIcon stroke="stroke-white" />
       </div>
       <div className="w-full lg:w-11/12">
         <A href={`/notes/${slug.current}`} className="blogs-content-card">

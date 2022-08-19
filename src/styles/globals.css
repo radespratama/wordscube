@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "./markdown.css";
-
 @layer components {
   @font-face {
     font-family: "Dank Mono";

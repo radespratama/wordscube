@@ -4,7 +4,6 @@ import Dynamic from "next/dynamic";
 import AppLayout from "@layout/AppLayout";
 
 import MetaTags from "@component/MetaTags";
-const Switcher = Dynamic(() => import("@component/Switcher"));
 const Hero = Dynamic(() => import("@component/Hero"));
 
 const Home: NextPage = () => {
@@ -18,7 +17,6 @@ const Home: NextPage = () => {
       <AppLayout>
         <Hero />
       </AppLayout>
-      <Switcher />
     </>
   );
 };
