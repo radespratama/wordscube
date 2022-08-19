@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer({ isFooter }: { isFooter?: boolean }) {
   if (isFooter) {
     return (
-      <footer className="max-w-screen-lg mx-auto select-none border-t text-gray-950 border-gray-400 dark:border-gray-800 dark:text-white">
+      <footer className="max-w-screen-md mx-auto select-none border-t text-gray-950 border-gray-400 dark:border-gray-800 dark:text-white">
         <section className="hidden sm:flex justify-between items-center py-3 px-4">
           <p className="text-base">
             Built using{" "}
@@ -17,7 +17,7 @@ export default function Footer({ isFooter }: { isFooter?: boolean }) {
             </a>
           </p>
           <div className="space-x-10 text-base">
-            Want to use this template?{" "}
+            Want to contribute?{" "}
             <a
               className="links"
               target="_blank"

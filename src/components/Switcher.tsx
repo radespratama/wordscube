@@ -5,7 +5,7 @@ import { useDarkSide } from "@lib/hooks/useDarkside";
 
 export default function Switcher() {
   const [colorTheme, setTheme] = useDarkSide();
-  const [darkSide, setDarkSide] = useState(colorTheme === "dark");
+  const [darkSide, setDarkSide] = useState(colorTheme === "light");
 
   const togglerTheme = (checked: boolean) => {
     setTheme(colorTheme);
@@ -19,9 +19,9 @@ export default function Switcher() {
           checked={darkSide}
           onChange={togglerTheme}
           className="h-6 w-6"
-          color={darkSide ? "white" : "black"}
-          moonColor={darkSide ? "white" : "black"}
-          sunColor={darkSide ? "white" : "black"}
+          color={darkSide ? "black" : "white"}
+          moonColor={darkSide ? "black" : "white"}
+          sunColor={darkSide ? "black" : "white"}
         />
       </button>
     </div>

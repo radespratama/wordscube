@@ -8,11 +8,11 @@ import AppLayout from "@layout/AppLayout";
 import MetaTags from "@component/MetaTags";
 import Intro from "@component/Notespage/Intro";
 const Switcher = Dynamic(() => import("@component/Switcher"));
+const NoteList = Dynamic(() => import("@component/Notespage/NoteList"));
 
 import { sanityClient } from "@lib/config/sanity.config";
 import { queryFetchPost } from "@lib/query";
 import { Note } from "@lib/types/typing";
-import NoteList from "@component/Notespage/NoteList";
 
 interface Props {
   response: [Note];

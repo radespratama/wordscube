@@ -12,7 +12,7 @@ export default function AppLayout({
 }: AppLayoutProps) {
   return (
     <>
-      <main className="flex-wrap flex-grow px-2 max-w-screen-lg mx-auto">
+      <main className="flex-wrap flex-grow px-2 max-w-screen-md mx-auto">
         {children}
       </main>
       <Footer isFooter={isFooter} />
