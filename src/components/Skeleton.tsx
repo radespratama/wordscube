@@ -9,7 +9,6 @@ export function NoteCardSkeleton() {
       <div className="hidden lg:flex flex-col items-center">
         <CircleIcon stroke="stroke-white" />
         <span className="bg-gray-300 dark:bg-gray-700 h-full w-px" />
-        <CircleIcon stroke="stroke-white" /> 
       </div>
       <div className="w-full sm:w-11/12">
         <div className="md:pl-4 mb-12">
